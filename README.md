@@ -73,8 +73,29 @@ Frecuencia: Es mejor hacer commits pequeños y a menudo que uno solo con demasia
 
 Escritura efectiva: * Usa verbos imperativos como Add (añadir), Change (modificar), Fix (arreglar) o Remove (eliminar).  No uses punto final ni puntos suspensivos en el mensaje.  Mantén el título en un máximo de 50 caracteres.  
 
-Commits Semánticos: Usa prefijos para que el historial sea legible, como feat (característica), fix (error), docs (documentación), style (formato) o refactor (limpieza de código).  
+Commits Semánticos: Usa prefijos para que el historial sea legible,
 
-Contexto: Si necesitas explicar mucho, usa el cuerpo del commit (desde la segunda línea) en lugar de saturar el título
+Prefijos:
+feat: para una nueva característica para el usuario.
+
+fix: para un bug que afecta al usuario.
+
+perf: para cambios que mejoran el rendimiento del sitio.
+
+build: para cambios en el sistema de build, tareas de 
+despliegue o instalación.
+
+ci: para cambios en la integración continua.
+
+docs: para cambios en la documentación.
+
+refactor: para refactorización del código como cambios de nombre de variables o funciones.
+
+style: para cambios de formato, tabulaciones, espacios o puntos y coma, etc; no afectan al
+usuario.
+
+test: para tests o refactorización de uno ya existente
+
+
 
 

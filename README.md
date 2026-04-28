@@ -35,8 +35,46 @@ modificaste, eliminaste o cambiaste de nombre.
 Si quiero que un archivo vuelva a su estado original 
 ´´´
 git restore <archivo>
+
 ´´´
-###
-###
-###
+Para que Git no vea ciertos archivos, se debe agregar su nombre completo al archivo 
+gitignore
+
+### Uso Stage Area
+Comandos de agregado: 
+´´´
+git add <archivo>
+´´´
+ agrega un archivo específico, mientras que
+ ´´´
+  git add . 
+  ´´´
+  agrega todos los archivos observados.  
+
+
+Sacar archivos: Si necesitas quitar un archivo del stage area y volver al estado anterior, usa 
+´´´
+git restore --staged <archivo>
+´´´
+### El Repositorio Local y Commits
+Confirmación: Es la fase donde se crea el "punto de guardado" definitivo mediante
+´´´
+ git commit -m "mensaje".  
+´´´
+
+Deshacer: Para revertir el último commit realizado, se utiliza el comando 
+´´´
+git reset --soft HEAD~1
+´´´
+### Buenas Prácticas de Commits
+Commits Atómicos: Cada confirmación debe representar un único cambio lógico, pequeño y completo. 
+
+Frecuencia: Es mejor hacer commits pequeños y a menudo que uno solo con demasiados cambios, siempre que el proyecto siga funcionando.  
+
+Escritura efectiva: * Usa verbos imperativos como Add (añadir), Change (modificar), Fix (arreglar) o Remove (eliminar).  No uses punto final ni puntos suspensivos en el mensaje.  Mantén el título en un máximo de 50 caracteres.  
+
+Commits Semánticos: Usa prefijos para que el historial sea legible, como feat (característica), fix (error), docs (documentación), style (formato) o refactor (limpieza de código).  
+
+Contexto: Si necesitas explicar mucho, usa el cuerpo del commit (desde la segunda línea) en lugar de saturar el título
+
 

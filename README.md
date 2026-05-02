@@ -250,6 +250,53 @@ release/: Destinadas a la limpieza final y preparación antes de una nueva versi
 hotfix/: Canales de emergencia para corregir errores críticos encontrados en la rama de producción.
 
 Resumen del ciclo: El trabajo diario ocurre en develop, y una vez validado, se traslada a main para su publicación oficial.
- tu
+
+## Clase 6 
+### Sincronización con el Remoto
+```bash
+git fetch: Consulta y descarga la información de los cambios en el servidor sin modificar tus archivos locales.
+
+git pull: Descarga y aplica automáticamente los cambios del repositorio remoto en tu rama actual.
+
+git push: Envía tus commits locales al repositorio remoto.
+
+Usa el flag -u la primera vez que subas una rama a un repositorio ajeno.
+```
+### Integración de Cambios (git merge)
+Concepto: Fusiona el historial de una rama en otra.
+
+Recomendación: Usa el flag --no-ff (no fast forward) para mantener rastro visual de la rama en el historial, incluso si decides borrarla después.
+
+### Ciclo de Trabajo Estándar (Sin Pull Requests)
+Actualización Inicial:
+
+Sitúate en la rama de integración (develop).
+```bash
+Ejecuta git fetch y git pull para estar al día.
+```
+
+
+Desarrollo en Rama Propia:
+
+Cámbiate a tu rama de trabajo e integra cambios de develop si los hubo mediante un merge.
+```bash
+Trabaja y sube tus avances con git push.
+```
+
+
+Fusión Final:
+
+Regresa a develop y asegúrate de que siga actualizada.
+```bash
+Fusiona tu trabajo usando git merge --no-ff mi-rama.
+```
+
+
+Si hay conflictos, resuélvelos manualmente, añade los archivos con git add . y finaliza con git commit.
+
+Limpieza:
+
+Elimina la rama local con git branch -D y sube la rama develop actualizada al remoto.
+
 ```bash
 ```

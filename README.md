@@ -250,6 +250,6 @@ release/: Destinadas a la limpieza final y preparación antes de una nueva versi
 hotfix/: Canales de emergencia para corregir errores críticos encontrados en la rama de producción.
 
 Resumen del ciclo: El trabajo diario ocurre en develop, y una vez validado, se traslada a main para su publicación oficial.
-
+ tu
 ```bash
 ```

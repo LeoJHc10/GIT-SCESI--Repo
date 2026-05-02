@@ -214,5 +214,42 @@ git checkout <rama>: Regresa a la versión más reciente de una rama.
 git checkout -b <nueva-rama>: Crea una rama a partir del punto actual para guardar experimentos.
 ```
 
+## Clase 5 
+
+###   Que son las ramas 
+Las ramas permiten segmentar el desarrollo para trabajar de forma segura:
+
+Rama main: Representa el tronco principal y contiene la versión estable y terminada del proyecto.
+
+Ramificaciones: Funcionan como líneas temporales paralelas para experimentar o desarrollar funciones sin alterar el código base.
+
+### Navegación entre Ramas
+Existen dos formas principales de moverse entre estas líneas de tiempo:
+
+```bash
+
+git switch -c <nombre>: Comando moderno diseñado específicamente para crear y saltar a una rama nueva.
+
+git checkout <nombre>: El método tradicional; aunque es más versátil, para el cambio de ramas se recomienda usar preferentemente switch.
+```
+
+### Metodología Gitflow
+Es una estructura organizada que asigna roles específicos a cada rama para profesionalizar el ciclo de vida del software:
+
+Ramas de Larga Duración
+main: Reservada exclusivamente para el código que está en producción (listo para el usuario final).
+
+develop: El espacio central donde se integran y prueban todas las mejoras antes de ser lanzadas.
+
+
+### Ramas de Apoyo (Temporales)
+feature/: Se utilizan para construir características o funcionalidades específicas.
+
+release/: Destinadas a la limpieza final y preparación antes de una nueva versión oficial.
+
+hotfix/: Canales de emergencia para corregir errores críticos encontrados en la rama de producción.
+
+Resumen del ciclo: El trabajo diario ocurre en develop, y una vez validado, se traslada a main para su publicación oficial.
+
 ```bash
 ```

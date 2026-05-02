@@ -298,5 +298,31 @@ Limpieza:
 
 Elimina la rama local con git branch -D y sube la rama develop actualizada al remoto.
 
+
+
+## CLASE 7
+### Colaboración y Seguridad: Pull Requests y Forks
+
+
+Pull Request 
+Un Pull Request es una solicitud formal para integrar cambios de una rama a otra, diseñada para que el código sea revisado antes de formar parte del proyecto definitivo.
+
+Revisión de Código: Permite que otros desarrolladores analicen los cambios, sugieran mejoras o detecten errores antes de la integración.
+
+Calidad y Seguridad: Ayuda a evitar la introducción de errores críticos o código malicioso en la versión estable del software.
+
+Colaboración: Crea un espacio de discusión donde el equipo puede debatir sobre la implementación técnica de una funcionalidad.
+
+Protección: Se recomienda configurar reglas en el repositorio que impidan hacer "merges" directos si no existe una aprobación previa mediante un PR.
+
+### Fork 
+Un Fork es una copia exacta de un repositorio que se guarda en tu propia cuenta de GitHub, permitiéndote tener una versión independiente del proyecto original.
+
+
+Libertad de Trabajo: Puedes realizar pruebas, cambios y mejoras sin riesgo de afectar o romper el proyecto original.
+
+Experimentación: Sirve como un entorno seguro para probar nuevas ideas sobre un código existente.
+
+Contribución: Es el paso inicial para colaborar en proyectos donde no tienes permisos de escritura; una vez que tus mejoras están listas en tu fork, puedes proponerlas al autor original a través de un Pull Request.
 ```bash
 ```

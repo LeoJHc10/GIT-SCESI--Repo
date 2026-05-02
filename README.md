@@ -324,5 +324,31 @@ Libertad de Trabajo: Puedes realizar pruebas, cambios y mejoras sin riesgo de af
 Experimentación: Sirve como un entorno seguro para probar nuevas ideas sobre un código existente.
 
 Contribución: Es el paso inicial para colaborar en proyectos donde no tienes permisos de escritura; una vez que tus mejoras están listas en tu fork, puedes proponerlas al autor original a través de un Pull Request.
+## Clase 8 
+
+## Git Stash
+El comando stash permite guardar de forma temporal los cambios que no están listos para un commit, dejando el directorio de trabajo limpio para cambiar de rama o realizar otras tareas
 ```bash
+git stash -m "descripcion": Almacena los cambios actuales asignándoles un nombre descriptivo para identificarlos fácilmente después.
+
+git stash list: Despliega una lista completa de todos los estados guardados anteriormente.
+
+git stash pop: Recupera y aplica el último cambio guardado, eliminándolo de la lista de stashes al mismo tiempo.
 ```
+## Git Diff
+Se utiliza para inspeccionar detalladamente las diferencias entre versiones de archivos o ramas:
+```bash
+git diff: Muestra las modificaciones realizadas en los archivos que aún no han sido agregados al área de preparación (no staged).
+
+git diff .: Visualiza los cambios pendientes en todos los archivos y subcarpetas del directorio actual.
+
+git diff [archivo]: Permite ver específicamente qué líneas se alteraron dentro de un archivo puntual.
+
+git diff --staged .: Muestra las diferencias de todos los archivos que ya fueron añadidos con git add y están listos para el commit.
+
+git diff --staged [archivo]: Revisa los cambios de un archivo específico que ya se encuentra en el área de staging.
+
+git diff [rama1] [rama2]: Compara el contenido y las diferencias estructurales entre dos ramas distintas.
+```
+
+

@@ -96,6 +96,71 @@ usuario.
 
 test: para tests o refactorización de uno ya existente
 
+## Clase 3 GITHUB Y SSH 
+
+### ¿Git hub que es?
+Es una plataforma en la nube que gestiona , aloja y colabora en proyectos de software utilizando
+Git.
+
+### SSH vs HTTPS
+HTTPS :nos pide autentificacion constantemenete  
+```bash
+ https://github.com/user/repo.git
+``` 
+SSH: Se configura la computadora  ssh para comunicar con git hub.
+para configurar se usa este codigo :
+
+```bash
+ssh-keygen -t ed25519 -C “tu-correo@email.com”    
+
+``` 
+### Para crear repositorio 
+```bash
+https://github.com/Tu-user  y hacer click en "New"
+
+``` 
+Pones nombre en el repositorio y le das “Create Repository”
+
+### Conectar repositorio local de Git con uno en Github 
+```bash
+git remote add origin git@github.com:TuUser/TuRepo.git
+
+git branch -M main
+
+git push -u origin main
+```
+NOTA: ya lo tienes que tener inicializado
+(git init) y con un commit 
+
+### Clonar un repositorio de GIT
+
+```bash
+git clone “git@github...”}
+
+```
+### Cambios 
+Subir mis cambios
+```bash
+git push origin <rama>
+
+
+git push: "Empujar" mis
+commits.
+origin: ¿A dónde? Al servidor que apodamos "origin" (GitHub).
+<rama>: ¿Qué rama? La rama
+<rama> de mi código.
+```
+ Bajar los cambios hechos
+```bash
+git pull origin <rama>
+
+git pull     trae los commits del servidor.
+origin       ¿De dónde? Del servidor que apodamos "origin" (GitHub).
+<rama>: ¿Qué rama? La rama
+<rama> de mi código
+```
 
 
 
+```bash
+```

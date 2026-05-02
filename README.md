@@ -161,6 +161,58 @@ origin       ¿De dónde? Del servidor que apodamos "origin" (GitHub).
 ```
 
 tune
+## Clase 4 
+
+### Gestión de Repositorios Remotos (git remote)
+Permite administrar la conexión entre tu PC y la nube:
+```bash
+git remote -v: Lista las URLs vinculadas.
+
+git remote add <nombre> <url>:       Crea un nuevo vínculo  
+
+git remote set-url <nombre> <url>:   Actualiza la dirección de un vínculo existente.
+```
+
+
+### Configuración de Múltiples Cuentas SSH
+Para usar varias cuentas sin conflictos, se utilizan alias:
+
+Generar llaves únicas:
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/id_nombre_cuenta.
+
+```
+
+Configurar el archivo SSH 
+Define un Host único para cada cuenta:
+
+```bash
+
+Host github-personal
+  HostName github.com
+  IdentityFile ~/.ssh/id_personal
+Clonar con el Alias:
+git clone git@github-personal:usuario/repo.git.
+```
+
+### Configuraciones Locales e Identidad
+Las configuraciones dentro de un repositorio mandan sobre las globales:
+```bash
+git config user.name "Nombre": Define el autor local.
+
+git config user.email "correo@email.com": Define el correo local.
+```
+
+
+### Navegación y Control (git checkout)
+Sirve para viajar en el tiempo o cambiar de contexto:
+```bash
+git checkout <hash>: Inspecciona un punto antiguo del historial.
+
+git checkout <rama>: Regresa a la versión más reciente de una rama.
+
+git checkout -b <nueva-rama>: Crea una rama a partir del punto actual para guardar experimentos.
+```
 
 ```bash
 ```

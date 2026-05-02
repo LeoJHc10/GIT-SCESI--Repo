@@ -9,11 +9,11 @@ Linus Torvals esta utilisando BitKeeper, el cual tenia una pequeña reglita  "No
 ### ¿Como instalar Git ?
 Para instalar git lo unico que es necesario es entrar a https://git-scm.com/install/  y seguir los pasos de instalacion acorde a tu S.O(Sistema Operativo) y verificas poniendo en la terminal git --version
 ### Configuraciones básicas 
-´´´
+```bash
 git config --global user.name "Tu Nombre"
 git config --global user.email "tu@correo.com"
 git config --global core.autocrlf true
-´´´
+```
 ### Archivos que toda Repo debería tener 
 README.md
 .gitignore
@@ -33,39 +33,39 @@ Modified: Es cuando GIT ya tiene una version previa del archivo y lo
 modificaste, eliminaste o cambiaste de nombre.
 
 Si quiero que un archivo vuelva a su estado original 
-´´´
+```bash
 git restore <archivo>
 
-´´´
+```
 Para que Git no vea ciertos archivos, se debe agregar su nombre completo al archivo 
 gitignore
 
 ### Uso Stage Area
 Comandos de agregado: 
-´´´
+```bash
 git add <archivo>
-´´´
+```
  agrega un archivo específico, mientras que
- ´´´
+ ```bash
   git add . 
-  ´´´
+ ```
   agrega todos los archivos observados.  
 
 
 Sacar archivos: Si necesitas quitar un archivo del stage area y volver al estado anterior, usa 
-´´´
+```bash
 git restore --staged <archivo>
-´´´
+```
 ### El Repositorio Local y Commits
 Confirmación: Es la fase donde se crea el "punto de guardado" definitivo mediante
-´´´
+```bash
  git commit -m "mensaje".  
-´´´
+```
 
 Deshacer: Para revertir el último commit realizado, se utiliza el comando 
-´´´
+```bash
 git reset --soft HEAD~1
-´´´
+```
 ### Buenas Prácticas de Commits
 Commits Atómicos: Cada confirmación debe representar un único cambio lógico, pequeño y completo. 
 
